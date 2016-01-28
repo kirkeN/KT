@@ -19,8 +19,23 @@ public class Algoritm {
 
     // Siia meetodi sisse kirjuta lahendus.
     private static int allaMediaani(int[] ints) {
-
-        return 0;
+        int summa = 0;
+        int allaMediaani=0;
+        for (int i = 0; i < ints.length; i++) {
+            if (60<ints[i]){
+                ints[i]=60;
+            }
+            summa+=ints[i];
+        }
+        for (int i = 0; i <ints.length ; i++) {
+            Arrays.sort(ints);
+            int mediaan = ints[ints.length/2];
+            if(ints[i]<mediaan){
+                //System.out.println(ints[i]);
+                allaMediaani+=1;
+            }
+        }
+        return allaMediaani;
     }
 
 }
