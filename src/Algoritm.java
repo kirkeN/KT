@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class Algoritm {
 
     // Main klass on ainult sulle endale testimiseks
+    //proovin midagi muuta ajeeeee
     public static void main(String[] args) {
 
         System.out.println(allaMediaani(new int[]{19, 45, 55, 67, 89}));
